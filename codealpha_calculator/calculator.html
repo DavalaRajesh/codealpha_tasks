@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+       * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #121212;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .calculator {
+            width: 92%; 
+            max-width: 360px;
+            background-color: rgb(28, 28, 30);
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        /* INPUT SCREEN */
+        input {
+            width: 100%;
+            height: 90px;
+            background-color: transparent;
+            border: none;
+            font-size: 42px;
+            color: aliceblue;
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 15px;
+            outline: none;
+            pointer-events: none;
+        }
+        .button {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 12px;
+            width: 100%;
+        }
+        button {
+            width: 100%;
+            aspect-ratio: 1 / 1; 
+            border-radius: 50%;
+            background-color: rgb(58, 58, 60);
+            color: aliceblue;
+            font-size: 22px;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.1s ease;
+        }
+        button:active {
+            background-color: rgb(44, 44, 46);
+        }
+
+        .sid {
+            background-color: rgb(255, 159, 10);
+        }
+
+        .sid:active {
+            background-color: rgb(212, 130, 5);
+        }
+        @media (min-width: 600px) {
+            button {
+                font-size: 20px;
+            }
+            button:hover {
+                background-color: rgb(78, 78, 80);
+            }
+            .sid:hover {
+                background-color: rgb(226, 142, 10);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="box" readonly>
+        <div class="button">
+        <button onclick="clear1()">AC</button>
+        <button onclick="screen('%')">%</button>
+        <button onclick="back()"><-x</button>
+        <button class="sid" onclick="screen('/')">/</button>
+        <button onclick="screen('7')">7</button>
+        <button onclick="screen('8')">8</button>
+        <button onclick="screen('9')">9</button>
+        <button class="sid" onclick="screen('*')">*</button>
+        <button onclick="screen('4')">4</button>
+        <button onclick="screen('5')">5</button>
+        <button onclick="screen('6')">6</button>
+        <button class="sid" onclick="screen('-')">-</button>
+        <button onclick="screen('1')">1</button>
+        <button onclick="screen('2')">2</button>
+        <button onclick="screen('3')">3</button>
+        <button class="sid" onclick="screen('+')">+</button>
+        <button onclick="screen('00')">00</button>
+        <button onclick="screen('0')">0</button>
+        <button onclick="screen('.')">.</button>
+        <button class="sid" onclick="scree()">=</button>
+    </div>
+    </div>
+    <script>
+        const box = document.getElementById("box");
+        function screen(input){
+        box.value+=input;
+        }
+        function scree(){
+            try{
+            box.value=eval(box.value);
+        }catch(err){
+            box.value="Error";
+        }
+    }
+        function clear1(){
+            box.value="";
+        }
+        function back(){
+            if(box.value =="Error"){
+                box.value="";
+            }else{
+                box.value = box.value.slice(0,-1);
+            }
+        }
+    </script>
+    
+</body>
+</html>
