@@ -1,0 +1,45 @@
+    .about{
+            background-color:#040016; 
+            height: 880px;
+            width: 98.2%;
+             border-radius: 40px;
+         box-shadow:0 0 20px #423fe3;
+        }
+        .aboutme{
+             font-size: 30px;
+            color: #009dff;
+            text-shadow: 0px 0px 4px #009dff;
+            padding-left: 10%;
+            padding-top: 14%;
+            font-size: 50px;
+        }
+        .descriptionabout{
+             font-size: 22px;
+            color:#bdc6ea;
+            padding-left: 9%;
+        }
+        .image{
+            float: left;
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 66%;
+            margin-top: -37%;
+            
+        }
+        @media screen and (max-width:768px){
+
+    .about{
+        font-size: 10px;
+        padding:50px 20px;
+        text-align:start;
+    }
+
+    .about-content{
+        flex-direction:column;
+    }
+
+    .about img{
+        width:250px;
+        margin-bottom:20px;
+    }
+}

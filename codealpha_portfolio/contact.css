@@ -1,0 +1,144 @@
+       .contact{
+            background-color:#040016; 
+            height: 1000px;
+            width: 98.2%;
+           box-shadow:0 0 20px #423fe3;
+           border-radius: 40px;
+        }
+         .touch{
+                 font-size: px;
+            color: #009dff;
+            text-shadow: 0px 0px 24px #009dff;
+            padding-left: 10%;
+            padding-top: 14%;
+             }
+             .details a{
+                display: inline-block;
+                text-decoration: none;
+                text-align: start;
+                color: azure;
+                margin-left: 130px;
+             }
+              .details p{
+                display: inline-block;
+                text-decoration: none;
+                text-align: start;
+                color: azure;
+                margin-left: 130px;
+             }
+             .icon{
+        display: flex;
+            margin-left: 10%;
+            margin-top: 1%;
+            gap: 20px;
+            }
+            .contact{
+            background-color:#040016; 
+            height: 1000px;
+            width: 98.2%;
+           box-shadow:0 0 20px #423fe3;
+        }
+       
+
+.cotact{
+    width: 550px;
+    padding:40px;
+    margin-left: 53%;
+    margin-top: -14%;
+    border-radius: 50px;
+    border:1px solid #010016;
+    box-shadow:0 0 20px #009dff;
+    box-sizing: 700px;
+
+}
+
+.cotact form{
+    text-decoration: none;
+    display:flex;
+    flex-direction:column;
+    color: #010016;
+    gap:30px;
+}
+
+.cotact input,
+.cotact textarea{
+    width:80%;
+    padding:18px 20px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#040016;
+    color:white;
+    font-size:16px;
+    box-shadow:0 0 20px #009dff;
+}
+.cotact input{
+    
+    color:white;
+}
+.cotact input:hover{
+    cursor: pointer;
+    background:#009dff;
+    box-shadow:0 0 15px #1500ff;
+}
+
+
+.cotact textarea{
+    resize:none;
+}
+
+.cotact button{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width:180px;
+    padding:14px;
+
+    border:none;
+    border-radius:30px;
+
+    background:transparent;
+    color:white;
+
+    border:1px solid #010016;
+    box-shadow:0 0 20px #009dff;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cotact button:hover{
+    background:#009dff;
+    box-shadow:0 0 20px #01446d;
+}
+.rol{
+            color: #009dff;
+            text-shadow: 0px 0px 4px #009dff;
+           padding-left: 9%;
+        }
+        .footer{
+            font-size: 20px;
+            text-align: center;
+            color: #aad4ee;
+            text-shadow: 0px 0px 4px #aad4ee;
+
+        }
+        @media screen and (max-width:768px){
+
+    .contact{
+        padding:30px 20px;
+    }
+
+    form{
+        width:100%;
+    }
+
+    input,
+    textarea{
+        width:100%;
+    }
+
+    button{
+        width:100%;
+    }
+}

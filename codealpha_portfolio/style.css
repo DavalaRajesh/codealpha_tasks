@@ -1,0 +1,23 @@
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+   html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #010016;
+            overflow-x:hidden;
+        }
+            img{
+            border-radius: 30%;
+        }
+        img:hover{
+            transform:translateY(-2px);
+            transition: all 0.2s;
+        }
+        
+        img:hover{
+        box-shadow:0 0 20px #423fe3 ;
+       }

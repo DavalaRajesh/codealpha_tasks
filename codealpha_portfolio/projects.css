@@ -1,0 +1,118 @@
+        .projects{
+            background-color: #040016; 
+            height: 1260px;
+            width: 98.2%;
+            border-radius: 40px;
+            box-shadow:0 0 20px #423fe3;
+        }
+        .heading{
+             font-size: 30px;
+            color: #009dff;
+            text-shadow: 0px 0px 4px #009dff;
+            padding-top: 7%;
+            font-size: 50px;
+            text-align: center;
+        
+        }
+        .work{
+            
+             font-size: 22px;
+            color:#bdc6ea;
+            text-shadow: 0px 0px 5px #bdc6ea;
+            text-align: center;
+        }
+ .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:70px;
+    padding-left: 69px;
+    margin-top: 41px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    box-shadow:0 0 20px #423fe3;
+    border-radius:20px;
+    padding:20px;
+    backdrop-filter:blur(10px);
+     box-shadow:0 0 20px #423fe3;
+    width: 300px;
+    height: 400px;
+    gap: 2rem;
+    transition:.4s;
+    z-index:  10;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+     box-shadow:0 0 20px #423fe3;
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.buttons a{
+    margin-right: 0%;
+    margin-top: 0%;
+
+}
+.headin{
+     color: #009dff;
+            text-shadow: -1px 0px 24px #009dff;
+            text-align: center;
+}
+.de{
+    
+            color:#bdc6ea;
+            text-shadow: 0px 0px 5px #bdc6ea;
+            text-align: center;
+}
+.tags span{
+    
+    display:inline-block;
+    margin: 5px;
+    text-align: center;
+    justify-content:center;
+    color: #bdc6ea;
+    padding: 5px 12px;
+    border-radius: 50px;
+    border:1px solid #010016;
+    box-shadow:0 0 12px #009dff;
+}
+
+.buttons a{
+    display: inline-block;
+    text-decoration:none;
+    color:white;
+    padding:10px 12px;
+    border-radius:90px;
+    transition:.4s;
+    margin-top: 10%;
+    background-color: #009dff;
+    border-radius:50px;
+    border:1px solid #010016;
+    box-shadow:0 0 20px #009dff;
+}
+.buttons a:hover{
+    background-color: #010016;
+}
+@media screen and (max-width:768px){
+
+    .projects-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .project-card{
+        width:90%;
+        margin:0 auto;
+    }
+
+    .project-card img{
+        width:100%;
+    }
+}
